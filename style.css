@@ -11,7 +11,7 @@
 .option
 {
     width: 100%;
-    height: 60px;
+    height: 10%;
     background-color:black ;
     position: sticky;
     top: 0px;
@@ -31,8 +31,8 @@
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 19px;
-    left: 50px;
+    top: 30%;
+    left: 4%;
     letter-spacing: 0px;
     align-items: center;
     
@@ -132,6 +132,12 @@ nav .btn:hover
     font-size: 30px;
     display: flex;
     gap: 14px;
+    animation: name 1s ease-in-out;
+}
+@keyframes name{
+    0%{
+        transform: translateY(-650%);
+    }
 }
 .sub form
 {
@@ -224,7 +230,7 @@ input[type="text"]::placeholder
     justify-content: center;
     align-content: center;
     align-items: center;
-    word-spacing: 4px;
+    word-spacing: 3px;
     row-gap: 2px;
     box-shadow: 1px 1px 19px;
 }
@@ -403,4 +409,15 @@ input[type="text"]::placeholder
     background: transparent;
     color: white;
 }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
 /* end of contact part */
+@media screen and (max-width: 576px)
+{
+   
+}
+    
