@@ -1,4 +1,6 @@
-div a:link{
+#project{
+    margin: 30px auto;
+ }div a:link{
    color:rgb(18, 81, 206);
 }
 div a:hover{
@@ -16,9 +18,9 @@ div a:hover{
  div a{
     border:1px solid black;
     width: auto;
-    
+   margin-top: 300px;
+    padding: 20px;
+    border-radius: 5px;
 
  }
- #project{
-    text-align: center;
- }
+ 
