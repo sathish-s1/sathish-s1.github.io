@@ -1,173 +1,24 @@
-body {
-       
-    background-color: white;
-    color: #222;
-  
-  }
-  
-  .dark-mode {
-    background-color: rgb(20, 20, 20);
-    color: white;
-  }
-  .dark-mode .contact1 {
-    background-color: rgb(20, 20, 20);
-    color: white;
-  }
-*
-{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-sizing: border-box;
+div a:link{
+   color:rgb(18, 81, 206);
 }
-  .navbar-inverse {
-    background-color:  rgb(20, 20, 20) ;
-    border-color: rgb(20, 20, 20) !important ;
-}
-.nav li a:active {
-    color: white !important;
-}
-.intro
-{
-   
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-}
-img{
-    width: 65%;
-    border-radius: 50%;
-    margin: 0 auto;
-    border: px solid rgb(23, 194, 23) !important;
-    box-shadow: 0 0 10px rgba(197, 190, 190, 0.2);
-}
-.card{
-    padding: 1.5em .5em .5em;
-    border-radius: 1em;
+div a:hover{
+    color:rgb(96, 239, 24);
+ }
+ div a:visited{
+    color:red;
+ }
+ div a:focus{
+    color:rgb(89, 7, 7);
+ }
+ div a:active{
+    color:rgb(245, 223, 33);
+ }
+ div a{
+    border:1px solid black;
+    width: auto;
+    
+
+ }
+ #project{
     text-align: center;
-    box-shadow: 0 5px 10px rgba(214, 206, 206, 0.2);
-    margin-top: 13%;
-    animation: name 1s ease-in-out;
-}
-@keyframes name{
-    0%{
-        transform: translateY(-650%);
-    }
-}
-.card-title{
-    font-weight: 700;
-    font-size: 1.8em;
-    margin-top: 10%;
-}
-.social
-{
-    margin-top: 16%;  
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    color: #222;
-}
- .social a{   
-    border: 2px solid rgba(214, 206, 206, 0.2);
-    border-radius: 50%;
-    padding: 1px 5px;
-}
-.about
-{
-   
-    height: 100%;
-}
-.about_a
-{
-    padding-top: 2rem;
-    flex-basis: 23%;
-    align-self: flex-start;
-}
-.about_b
-{
-    padding-top: 2rem;
-    flex-basis: 77%;
-}
-.about_b span
-{
-    padding: 3px;
-    background-color: aquamarine;
-}
-.about2
-{
-    display: flex;
-    
-}
-.about_c
-{
-   display: flex;
-   justify-content: space-between;
-   
-
-}
-.about_d
-{
-    display: flex;
-   justify-content: space-between;
-   
-}
-.hobby
-{
-    padding: 5px;
-    border: 1px solid rgb(20, 20, 20) !important;
-    border-radius: 10%;
-    background-color:   #ffffff;
-}
-
-.hobby:hover{
-    transform:rotate(30deg);
-}
-.dark-mode .hobby{
-    background-color:  rgb(20, 20, 20);
-    border: 1px solid #ffffff !important;
-}
-.skill
-{
-    
-    height: 100%;
-}
-.skill_a
-{
-    display: flex;
-
-}
-.skill_a h1
-{
-    font-size: 50px !important;
-}
-.skill_b
-{
-    display: flex;
-    gap: 10px;
-
-}
-.skill_b1
-{
-    flex-basis: 70%;
-}
-.skill_b2
-{
-    flex-basis: 30%;
-}
-.contact
-{
-    
-   
-    height: 100vh;
-}
-.contact1
-{
-    background-color:  #ffffff;
-    width: 400px;
-    height: 400px;
-    box-shadow: 0 0 10px rgba(197, 190, 190, 0.2);
-    
-}
-.contact1 .card
-{
-   
-}
+ }

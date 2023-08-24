@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snakegame</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+  <script src="p5.js"></script>
+  <script src="p5.sound.js"></script>
+  <script src="sketch.js"></script>
+
+</head>
+<body>
+  <h1>Snakegame</h1>
+  <div id="canvasForHTML"></div>
+</body>
+
+
+<script>
+
+    var numberofsegment = 20;
+    var segmentsize = 20;
+    var snakeheadX =0;
+    var snakeheadY =0;
+    var velocityX =0;
+    var velocityY =0;
+    var fruitX =0;
+    var fruitY =0;
+    var taillength = 3;
+    var tailarray = [];
+    
+
+    function setup() {
+        
+      var canvas = createCanvas(400, 400);
+      frameRate(10);
+      canvas.parent('canvasForHTML');
+      
+      snakeheadX = numberofsegment/2;
+      snakeheadY = numberofsegment/2;
+
+      fruitX = floor(random(0,segmentsize))
+      fruitY = floor(random(0,segmentsize))
+    }
+
+    function draw() {
+      background(127);
+
+      
+  if(velocityX != 0 || velocityY !=0)
+    {  
+     while(tailarray.length > taillength)
+      {
+        tailarray.shift();
+      }
+
+      tailarray.push({x:snakeheadX,y:snakeheadY})
+
+      for (let i= 0; i<tailarray.length;i++)
+      {
+        rect(tailarray[i].x*segmentsize,tailarray[i].y*segmentsize,segmentsize,segmentsize)
+      }
+
+
+      if(snakeheadX == fruitX && snakeheadY == fruitY)
+      {
+        fruitX = floor(random(0,segmentsize))
+        fruitY = floor(random(0,segmentsize))
+        taillength++
+      }
+
+      for(i=0;i<tailarray.length;i++)
+     {
+       if(snakeheadX+velocityX == tailarray[i].x && snakeheadY+velocityY == tailarray[i].y)
+         
+         {
+           snakeheadX = numberofsegment/2;
+           snakeheadY = numberofsegment/2;
+           
+           velocityX =0;
+           velocityY =0;
+           
+           taillength =3;
+           tailarray =[];
+           
+           fruitX= floor(random(0,numberofsegment))
+           fruitY= floor(random(0,numberofsegment))
+           
+         }
+     }
+    }
+      snakeheadX = snakeheadX+velocityX;
+      snakeheadY = snakeheadY+velocityY;
+      withinboundry()
+      
+     fill(255,0,0)
+     rect(fruitX*segmentsize,fruitY*segmentsize,segmentsize,segmentsize)
+
+
+     fill(0,0,255)
+     rect(snakeheadX*segmentsize,snakeheadY*segmentsize,segmentsize,segmentsize)
+
+    }
+    function keyPressed()
+    {
+        if(keyCode == UP_ARROW )
+        {
+            velocityX = 0;
+            velocityY = -1;
+        }
+        if(keyCode == DOWN_ARROW)
+        {
+            velocityX = 0;
+            velocityY = 1;
+        }
+        if(keyCode == LEFT_ARROW)
+        {
+            velocityX = -1;
+            velocityY = 0;
+        }
+        if(keyCode == RIGHT_ARROW)
+        {
+            velocityX = 1;
+            velocityY =0;
+        }
+    }
+    function withinboundry()
+    {
+        if(snakeheadX > numberofsegment)
+        {
+            snakeheadX = 0;
+        }
+        if(snakeheadX < 0)
+        {
+            snakeheadX = numberofsegment;
+        }
+        if (snakeheadY > numberofsegment)
+        {
+            snakeheadY =0 ;
+        }
+        if(snakeheadY < 0)
+        {
+            snakeheadY = numberofsegment;
+        }
+    }
+  </script>
+</html>

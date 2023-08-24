@@ -1,0 +1,307 @@
+h1
+{
+
+ text-align: center;
+ color:rgb(25, 227, 69);
+ text-shadow: 3px 4px  rgb(102, 22, 230);
+
+}
+.container
+{
+    width: 350px ;
+    height: 350px ;
+    border: 10px solid brown ;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: burlywood;
+    border-radius: 13px;
+}
+.pocket
+{
+    width:20px ;
+    height: 20px ;
+    background-color: black ;
+    border-radius: 50%;
+    position: absolute;
+   
+}
+.pocket-1
+{
+    top: 0px;
+    left: 0px;
+}
+.pocket-2
+{
+    top: 0px ;
+    right:0px ;
+}
+.pocket-3
+{
+    bottom: 0px ;
+    left:0px ;
+}
+.pocket-4
+{
+    bottom: 0px ;
+    right:0px ;
+}
+.striker
+{
+    width:12px ;
+    height:12px ;
+    background-color:red ;
+    border-radius: 50%;
+    position: absolute;
+    border: double;
+    
+}
+.striker-1
+{
+    top: 50px ;
+    right:30px ;
+}
+.striker-2
+{
+    top: 30px ;
+    right:50px ;
+}
+.striker-3
+{
+    top: 30px ;
+    left:50px ;
+   
+}
+.striker-4
+{
+    top: 50px ;
+    left:30px ;
+}
+.striker-5
+{
+    bottom: 50px ;
+    left:30px ;
+}
+.striker-6
+{
+    bottom: 30px ;
+    left:50px ;
+}
+.striker-7
+{
+    bottom: 30px ;
+    right:50px ;
+}
+.striker-8
+{
+    bottom: 50px ;
+    right:30px ;
+}
+.base
+{
+    position:absolute;
+    border-radius: 15px;
+}
+.base
+{
+    border: 2px solid black;
+}    
+
+.base-1
+{
+    width:250px;
+    height: 15px;
+    top: 28px;
+    left: 48px;
+    border-bottom: 1.5px solid black;
+
+}
+.base-2
+{
+    width:15px;
+    height: 250px;
+    top: 48px;
+    left: 28px;
+    border-right: 1.5px solid black;
+
+}
+.base-3
+{
+    width:250px;
+    height: 15px;
+    bottom: 28px;
+    left: 48px;
+    border-top: 1.5px solid black;
+
+}
+.base-4
+{
+    width:15px;
+    height: 250px;
+    bottom: 48px;
+    right: 28px;
+    border-left: 1.5px solid black;
+
+}
+.design
+{
+    width: 70px;
+    height: 70px;
+    border: double;
+    top: 137px;
+    left: 137px;
+    position: absolute;
+    border-radius: 50%;
+}
+.center
+{
+    width:11px ;
+    height:11px ;
+    background-color:rgb(198, 32, 32) ;
+    border-radius: 50%;
+    position: absolute;
+    
+    top: 1px;
+    left: 1px;
+}
+#center-1
+{
+    width:13px ;
+    height:13px ;
+    border-radius: 50%;
+    position: absolute;
+    border: double;
+    top: 27px;
+    left: 27px;
+
+}
+.points
+{
+    width: 3px;
+    height: 24px;
+    border-radius: 65%;
+    border: double;
+    transform: rotate(-40deg);
+    position: absolute;
+    top: 4px;
+    left: 18px;
+}
+.points-2
+{
+    width: 3px;
+    height: 22px;
+    border-radius: 65%;
+    border: double;
+    transform: rotate(146deg);
+    position: absolute;
+    bottom: 4px;
+    right: 18px;
+}
+.points-3
+{
+    width: 3px;
+    height: 22px;
+    border-radius: 65%;
+    border: double;
+    transform: rotate(48deg);
+    position: absolute;
+    bottom: 8px;
+    left: 15px;
+}
+.points-4
+{
+    width: 3px;
+    height: 22px;
+    border-radius: 65%;
+    border: double;
+    transform: rotate(49deg);
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+.points-5
+{
+    width: 3px;
+    height: 23px;
+    border-radius: 65%;
+    border: double;
+    transform: rotate(4deg);
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+.points-6
+{
+    width: 3px;
+    height: 22px;
+    border-radius: 65%;
+    border: double;
+    transform: rotate(8deg);
+    position: absolute;
+    bottom: 0px;
+    right: 34px;
+}
+.points-7
+{
+    width: 3px;
+    height: 23px;
+    border-radius: 65%;
+    border: double;
+    transform: rotate(92deg);
+    position: absolute;
+    bottom: 20px;
+    right: 9px;
+}
+.points-8
+{
+    width: 3px;
+    height: 23px;
+    border-radius: 65%;
+    border: double;
+    transform: rotate(91deg);
+    position: absolute;
+    bottom: 22px;
+    left: 10px;
+}
+.corners
+{
+    height: 30px; 
+    width: 30px; 
+    border: 10px solid brown;
+	position: absolute; 
+    transform: translate(-50%,-50%);
+    
+}
+.cor1
+{
+    top:9.7px;
+    left: 9.7px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-radius: 50% 0 0 0;
+}
+.cor2
+{
+    top: 9.7px;
+    right:-30px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-radius: 0 50% 0 0;
+}
+.cor3
+{
+    bottom: -30px;
+    right:-30px;
+    border-top: 0px;
+    border-left: 0px;
+    border-radius: 0 0 50% 0;
+}
+.cor4
+{
+    bottom: -30px;
+    left:9.7px;
+    border-top: 0px;
+    border-right: 0px;
+    border-radius: 0 0 0 50%;
+}
