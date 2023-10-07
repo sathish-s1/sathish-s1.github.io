@@ -46,7 +46,7 @@ img{
     text-align: center;
     box-shadow: 0 5px 10px rgba(214, 206, 206, 0.2);
     margin-top: 13%;
-    animation: name 1.5s ease-in-out;
+    animation: name 2s ease-in-out;
 }
 @keyframes name{
     0%{
