@@ -50,7 +50,7 @@ img{
 }
 @keyframes name{
     0%{
-        transform: translateY(-650%);
+        transform: translateY(-100%);
     }
 }
 .card-title{
